@@ -1,33 +1,17 @@
 /*
  * AuxiliarEjercicio6.java
- * 
- * Copyright 2023 omarl <omarl@PC-OMAR>
- * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
- * 
+ * Controlamos el nº de columnas, debe estar comprendido entre 1 y 22, 
+ * de esa forma no se juntan los nº
+ * Controlamos el nº, debe ser positivo y menor que 10_000
+ * El programa se debe ejecutar, debe mostrar datos
  */
 
 
 public class AuxiliarEjercicio6 {
 	
 	public static void DarListaNumeros(int numero, int numeroColumna) {
-		
 		for (int i = 1; i <= numero; i++){
-		 System.out.printf("%d\t", i);
+		 System.out.printf("%5d", i);
 		 if (i % numeroColumna == 0){
 			System.out.printf("%n%n");
 		 }
@@ -35,4 +19,3 @@ public class AuxiliarEjercicio6 {
 	 }
 	}
 }
-
